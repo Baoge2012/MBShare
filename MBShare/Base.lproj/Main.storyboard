@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-xg-8H4">
+                                <rect key="frame" x="250" y="120" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MKc-nD-V4E"/>
+                                    <constraint firstAttribute="height" constant="44" id="Y1h-iC-lbL"/>
+                                </constraints>
+                                <state key="normal" title="分享到微博"/>
+                                <connections>
+                                    <action selector="shareWeibo" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnQ-qH-2vv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdo-4s-w42">
+                                <rect key="frame" x="240" y="179" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aUD-lh-2Q7"/>
+                                    <constraint firstAttribute="width" constant="120" id="eXy-17-J0W"/>
+                                </constraints>
+                                <state key="normal" title="分享给微信好友"/>
+                                <connections>
+                                    <action selector="shareWechatSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bO-zV-PJP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tv-zH-BUS">
+                                <rect key="frame" x="240" y="238" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="d4f-AW-wMH"/>
+                                    <constraint firstAttribute="height" constant="44" id="mSv-hW-hVw"/>
+                                </constraints>
+                                <state key="normal" title="分享到微信朋友圈"/>
+                                <connections>
+                                    <action selector="shareWechatTimeline" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHt-hF-CXs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EWe-xg-8H4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="4jP-2p-5C3"/>
+                            <constraint firstItem="Cdo-4s-w42" firstAttribute="top" secondItem="EWe-xg-8H4" secondAttribute="bottom" constant="15" id="MKV-SX-9EE"/>
+                            <constraint firstItem="5tv-zH-BUS" firstAttribute="top" secondItem="Cdo-4s-w42" secondAttribute="bottom" constant="15" id="cbQ-Og-fft"/>
+                            <constraint firstItem="5tv-zH-BUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kyC-b2-r4n"/>
+                            <constraint firstItem="EWe-xg-8H4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lgJ-pk-2iM"/>
+                            <constraint firstItem="Cdo-4s-w42" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xdd-yX-iVC"/>
+                            <constraint firstItem="EWe-xg-8H4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zKf-IN-dJI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zKf-IN-dJI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
